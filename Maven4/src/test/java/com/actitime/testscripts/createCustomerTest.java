@@ -7,10 +7,10 @@ import com.actitime.generic.Baseclass1;
 import com.actitime.pom.Entertimetrack1;
 import com.actitime.pom.Tasklist1;
 
-public class createcustomer1 extends Baseclass1 {
+public class createCustomerTest extends Baseclass1 {
 
 	@Test
-	public void createCustomer()
+	public void createCustomertest()
 	{
 		Entertimetrack1 ettt=new Entertimetrack1(driver);
 		ettt.getTaskbt().click();

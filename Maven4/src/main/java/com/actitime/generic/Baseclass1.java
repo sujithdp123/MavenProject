@@ -1,6 +1,7 @@
 package com.actitime.generic;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,7 +39,7 @@ public class Baseclass1 {
 		Reporter.log("open browser", true);
 		driver.get("https://demo.actitime.com/login.do");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);		
 	}
 	@BeforeMethod
 	public void login() throws IOException
